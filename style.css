@@ -1,0 +1,12 @@
+.class1{
+    min-height: fit-content;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 4px;
+}
+#getTitleBtn{
+    outline:none;
+    border: none;
+    border-radius: 12px;
+}
