@@ -5,14 +5,9 @@ var profileData = {
 
 };
 
-backendapi(profileData);
+sendToBackend(profileData);
 chrome.runtime.sendMessage({ action: "profileData", data: profileData });
 
-function backendapi(data) {
-    const extractedData = data;
-    sendToBackend(extractedData);
-    displayData(data);
-}
 
 
 function sendToBackend(data) {
@@ -28,7 +23,3 @@ function sendToBackend(data) {
     .catch(error => console.error('Error sending data to backend:', error));
 }
 
-function displayData(data) {
-    const profileDataElement = document.getElementById("profileData");
-    profileDataElement.innerHTML += "completed successfully";
-}

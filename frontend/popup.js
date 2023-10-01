@@ -25,8 +25,6 @@ document.getElementById("startScraping").addEventListener("click", function () {
                            files: ["/frontend/content.js" ],
                          } )    .then(() => console.log("script injected in all frames"));
                   }
-                //   currentIndex++;
-                //   scrapeNextProfile();
               });
           });
       } else {
